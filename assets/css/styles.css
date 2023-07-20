@@ -129,17 +129,24 @@ nav {
 
   .about {
     background-color: var(--bg-color);
-    padding: 1rem 6rem;
+    padding: 1rem 10rem;
+    max-width: 68.75rem;
   }
   
-  .about h2 {
+  .about h1 {
     margin-bottom: var(--bottom-margin);
-    text-align: center;
+    font-size:48px;
+    text-align: left;
   }
   
   .about p {
     line-height: var(--line-height);
-    padding: 0.4rem;
+    padding: 1rem;
+  }
+
+  .hobbies {
+    background-color: var(--bg-color);
+    padding: 1rem 10rem;
   }
 
   .skills {
