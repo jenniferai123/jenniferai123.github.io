@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Inter");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 @media screen and (max-width: 720px) {
     /*changes reflects on screen with a width of 720px and below*/
@@ -6,7 +6,7 @@
 
 /* Variables */
 :root {
-  --font-family: "Inter";
+  --font-family: "Poppins";
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
