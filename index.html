@@ -27,55 +27,44 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <title>Jennifer Ai | Student</title>
+
+    <!-- Navbar -->
+    <nav>
+      <h1>JENNIFER AI</h1>
+      <div class="navigation-container">
+        <ul>
+        <li><a href="index.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://www.google.com/">Resume</a></li>
+        <!-- <li><a href="#contact" class="nav-link">Contact</a></li> -->
+        </ul>
+      </div>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+
   </head>
 
   <body>
-    <!-- Navbar -->
-
-    <nav>
-      <h1>JENNIFER AI</h1>
-      <ul class="navigation">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <!-- <li><a href="#contact" class="nav-link">Contact</a></li> -->
-      </ul>
-      <button class="burger-menu" id="burger-menu">
-        <ion-icon class="bars" name="menu-outline"></ion-icon>
-      </button>
-    </nav>
 
     <!-- Hero Section -->
 
     <section class="hero" id="about">
-      <img
-        src="assets/images/icon.svg"
-        alt="jennifer-ai"
-        loading="lazy"
-        class="hero-img"
-      />
-      <div class="bio animate_animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
+      <div class="bio">
+        <h1 class="bio-title">Hi, I'm Jennifer</h1>
         <p class="bio-text">
           I am a student at Cornell University studying Computing and Information Sciences.
         </p>
       </div>
+      <img
+        src="assets/images/headshot.png"
+        alt="jennifer-ai"
+        loading="lazy"
+        class="hero-img"
+      />
     </section>
 
-    <!-- More about -->
-
-    <section class="more-about">
-      <h2>More About Me</h2>
-      <p>
-        Currently in my second year as an engineering undergraduate at Cornell University, I have developed a passion for the technology field.
-      </p>
-      <p>
-        I am originally from a suburb north of Dallas, TX.
-      </p>
-      <p>
-        In my free time I love to crochet, watch A24 movies, and make coffee.
-      </p>
-    </section>
 
     <!-- Skills section -->
 
@@ -83,7 +72,6 @@
       <h2 class="skill-header">My Top Skills</h2>
 
       <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
           <img
             src="assets/icons/icons8-figma.svg"
             alt=""
@@ -102,9 +90,6 @@
             loading="lazy"
             class="icon icon-card"
           />
-        </div>
-
-        <div class="second-set animate__animated animate__pulse">
           <img
             src="assets/icons/icons8-google-sheets.svg"
             alt=""
@@ -123,7 +108,6 @@
             loading="lazy"
             class="icon icon-card"
           />
-        </div>
       </div>
     </section>
 
@@ -157,30 +141,34 @@
       alt="scroll-up"
     /></i>
 
-    <!-- Social accounts - Fixed to the right -->
-
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/jenniferaiii/" target="_blank"
-        ><img src="assets/icons/icons8-linkedin-circle.png" alt="Linkedin" class="socicon"
-      /></a>
-      <a href="https://github.com/jenniferai123" target="_blank"
-        ><img src="assets/icons/icons8-github.png" alt="Github" class="socicon"
-      /></a>
-      <a href="mailto:jenniferai1@yahoo.com" target="_blank"
-        ><img src="assets/icons/icons8-mail.png" alt="Mail" class="socicon"
-      /></a>
-    </div>
-
     <!-- Footer section -->
-    <footer>
-      <p class="copy">&copy; Copyright 2023</p>
-      <p class="copy">
-        Built with &#x2661; by
-        <a href="https://github.com/jenniferai123" target="_blank"
-          >Jennifer Ai</a
-        >
-      </p>
-    </footer>
+    
+      <div id="footer-wrapper">
+        <footer>
+          <p class="copy">&copy; Copyright 2023</p>
+          <p class="copy">
+            Built with &#x2661; by
+            <a href="https://github.com/jenniferai123" target="_blank"
+              >Jennifer Ai</a
+            >
+          </p>
+          
+          <!-- Social accounts -->
+          <div id="socials">
+            <a href="https://www.linkedin.com/in/jenniferaiii/" target="_blank"
+              ><img src="assets/icons/icons8-linkedin-circle.png" alt="Linkedin" class="socicon"
+            /></a>
+            <a href="https://github.com/jenniferai123" target="_blank"
+              ><img src="assets/icons/icons8-github.png" alt="Github" class="socicon"
+            /></a>
+            <a href="mailto:jenniferai1@yahoo.com" target="_blank"
+              ><img src="assets/icons/icons8-mail.png" alt="Mail" class="socicon"
+            /></a>
+          </div>
+        </footer>
+      </div>
+    
+    
 
     <!-- Website scripts -->
     <script src="assets/js/app.js"></script>

@@ -10,11 +10,11 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #fcfcfc;
+  --bg-color: #FAF9F6;
   --primary-color: #8E7DBE;
   --secondary-color: #D88C9A;
-  --primary-shadow: #4E3E7A;
-  --secondary-shadow: #B63E54;
+  --primary-shadow: #bababa;
+  --secondary-shadow: #bababa;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -48,19 +48,20 @@ a:hover {
 
 body {
   font-family: var(--font-family);
+  background-color: #FAF9F6;
 }
 
 nav {
-    position: sticky;
+    position: static;
     top: 0;
     left: 0;
     z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 3.5rem;
+    padding: 3.5rem 5.5rem;
     background-color: var(--bg-color);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); */
   }
 
   nav h1 {
@@ -104,37 +105,39 @@ nav {
   }
 
   .hero img {
-    height: 37.5rem;
-    width: 37.5rem;
+    border-radius:50%;
+    height:400px;
+    width:400px;
+    max-width:fit-content;
   }
   
   .bio {
-    width: 25rem;
-    padding: 0.625rem;
-    border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    width: 50%;
+    /* padding: 0.625rem; */
   }
   
   .bio h1 {
     margin-bottom: var(--bottom-margin);
+    font-size:48px;
   }
   
   .bio p {
     line-height: var(--line-height);
     padding: 0.3rem 0;
+    font-size:larger;
   }
 
-  .more-about {
+  .about {
     background-color: var(--bg-color);
     padding: 1rem 6rem;
   }
   
-  .more-about h2 {
+  .about h2 {
     margin-bottom: var(--bottom-margin);
     text-align: center;
   }
   
-  .more-about p {
+  .about p {
     line-height: var(--line-height);
     padding: 0.4rem;
   }
@@ -143,7 +146,7 @@ nav {
     max-width: 68.75rem;
     margin: auto;
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: 5rem;
   }
   
   .skill-header {
@@ -160,7 +163,7 @@ nav {
   }
 
   .icon-card {
-    background-color: #fff;
+    background-color: #FAF9F6;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--secondary-shadow);
     padding: 20px;
@@ -208,19 +211,15 @@ nav {
   }
   
   .project-card {
-    background-color: #fff;
+    background-color: #FAF9F6;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
   }
 
-  .socials {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    right: 1%;
-    bottom: 50%;
+  #socials {
+    padding-top:3px;
   }
   
   .socicon {
@@ -228,11 +227,18 @@ nav {
     height: 2rem;
   }
 
+  #footer-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
   footer {
     background-color: var(--bg-color);
     padding: 1.25rem;
     text-align: center;
-    margin: 2rem 0 0;
+    position:absolute;
+    width: 100%;
   }
 
   .scroll-up {
@@ -240,6 +246,7 @@ nav {
     right: 0.5%;
     bottom: 3%;
     cursor: pointer;
+    z-index: 8;
   }
   
   .up-arrow {
