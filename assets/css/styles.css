@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Inter");
 
 @media screen and (max-width: 720px) {
     /*changes reflects on screen with a width of 720px and below*/
@@ -6,7 +6,7 @@
 
 /* Variables */
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-family: "Inter";
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
